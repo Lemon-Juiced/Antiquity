@@ -2,7 +2,13 @@
   "block.antiquity.layered_cobblestone_road": "Layered Cobblestone Road",
   "block.antiquity.layered_blackstone_road": "Layered Blackstone Road",
 
+  "item.antiquity.wooden_glaive": "Wooden Glaive",
+  "item.antiquity.stone_glaive": "Stone Glaive",
+  "item.antiquity.iron_glaive": "Iron Glaive",
   "item.antiquity.copper_glaive": "Copper Glaive",
+  "item.antiquity.golden_glaive": "Golden Glaive",
+  "item.antiquity.diamond_glaive": "Diamond Glaive",
+  "item.antiquity.netherite_glaive": "Netherite Glaive",
 
   "itemGroup.antiquity.blocks": "Antiquity: Blocks",
   "itemGroup.antiquity.items": "Antiquity: Items"

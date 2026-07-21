@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/spear_in_hand",
+  "textures": {
+    "layer0": "antiquity:item/wooden_glaive_in_hand"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [ 0, 270, -45 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, 90, 45 ]
+    }
+  }
+}

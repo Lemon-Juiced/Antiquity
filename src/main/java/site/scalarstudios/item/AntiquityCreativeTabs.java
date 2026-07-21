@@ -30,7 +30,13 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
+            event.accept(AntiquityItems.WOODEN_GLAIVE.get());
+            event.accept(AntiquityItems.STONE_GLAIVE.get());
+            event.accept(AntiquityItems.IRON_GLAIVE.get());
             event.accept(AntiquityItems.COPPER_GLAIVE.get());
+            event.accept(AntiquityItems.GOLDEN_GLAIVE.get());
+            event.accept(AntiquityItems.DIAMOND_GLAIVE.get());
+            event.accept(AntiquityItems.NETHERITE_GLAIVE.get());
         }
     }
 

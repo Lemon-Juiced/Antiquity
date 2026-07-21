@@ -2,5 +2,8 @@
   "block.antiquity.layered_cobblestone_road": "Layered Cobblestone Road",
   "block.antiquity.layered_blackstone_road": "Layered Blackstone Road",
 
-  "itemGroup.antiquity.blocks": "Antiquity: Blocks"
+  "item.antiquity.copper_glaive": "Copper Glaive",
+
+  "itemGroup.antiquity.blocks": "Antiquity: Blocks",
+  "itemGroup.antiquity.items": "Antiquity: Items"
 }

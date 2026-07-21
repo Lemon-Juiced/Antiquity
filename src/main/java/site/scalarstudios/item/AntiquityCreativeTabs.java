@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.Antiquity;
 import site.scalarstudios.block.AntiquityBlocks;
+import site.scalarstudios.item.AntiquityItems;
 
 public class AntiquityCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Antiquity.MODID);
@@ -19,10 +20,17 @@ public class AntiquityCreativeTabs {
             .icon(() -> new ItemStack(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get()))
             .build());
 
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ANTIQUITY_ITEMS_TAB = CREATIVE_MODE_TABS.register("antiquity_items", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.antiquity.items"))
+            .icon(() -> new ItemStack(AntiquityItems.COPPER_GLAIVE.get()))
+            .build());
+
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == ANTIQUITY_BLOCKS_TAB.get()) {
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
+        } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
+            event.accept(AntiquityItems.COPPER_GLAIVE.get());
         }
     }
 

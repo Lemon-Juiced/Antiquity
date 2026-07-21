@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "antiquity:block/layered_blackstone_road_top",
+    "bottom": "antiquity:block/layered_blackstone_road_bottom",
+    "side": "antiquity:block/layered_blackstone_road_side"
+  }
+}

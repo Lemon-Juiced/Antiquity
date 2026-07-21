@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "SSS",
+    "GGG"
+  ],
+  "key": {
+    "#": "minecraft:blackstone",
+    "S": "minecraft:sand",
+    "G": "minecraft:gravel"
+  },
+  "result": {
+    "id": "antiquity:layered_blackstone_road",
+    "count": 9
+  }
+}

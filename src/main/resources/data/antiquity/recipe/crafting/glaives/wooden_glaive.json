@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #",
+    "#/",
+    "/ "
+  ],
+  "key": {
+    "#": "#minecraft:wooden_tool_materials",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "antiquity:wooden_glaive"
+  }
+}

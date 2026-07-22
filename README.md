@@ -4,6 +4,7 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 
 ## Features
 - Glaive Weapon (Inspired by Minecraft Dungeons' Glaive)
+- Kiln Bricks 
 - Layered Stone Roads (Inspired by Ancient Roman Roads)
   - Layered Cobblestone Road
   - Layered Blackstone Road

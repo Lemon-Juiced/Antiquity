@@ -1,6 +1,7 @@
 {
   "block.antiquity.layered_cobblestone_road": "Layered Cobblestone Road",
   "block.antiquity.layered_blackstone_road": "Layered Blackstone Road",
+  "block.antiquity.kiln_bricks": "Kiln Bricks",
 
   "item.antiquity.wooden_glaive": "Wooden Glaive",
   "item.antiquity.stone_glaive": "Stone Glaive",
@@ -9,6 +10,9 @@
   "item.antiquity.golden_glaive": "Golden Glaive",
   "item.antiquity.diamond_glaive": "Diamond Glaive",
   "item.antiquity.netherite_glaive": "Netherite Glaive",
+
+  "item.antiquity.kiln_brick": "Kiln Brick",
+  "item.antiquity.kiln_clay": "Kiln Clay",
 
   "itemGroup.antiquity.blocks": "Antiquity: Blocks",
   "itemGroup.antiquity.items": "Antiquity: Items"

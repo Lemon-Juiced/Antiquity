@@ -27,6 +27,7 @@ public class AntiquityCreativeTabs {
 
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == ANTIQUITY_BLOCKS_TAB.get()) {
+            event.accept(AntiquityBlocks.KILN_BRICKS.get());
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
@@ -37,6 +38,8 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityItems.GOLDEN_GLAIVE.get());
             event.accept(AntiquityItems.DIAMOND_GLAIVE.get());
             event.accept(AntiquityItems.NETHERITE_GLAIVE.get());
+            event.accept(AntiquityItems.KILN_BRICK.get());
+            event.accept(AntiquityItems.KILN_CLAY.get());
         }
     }
 

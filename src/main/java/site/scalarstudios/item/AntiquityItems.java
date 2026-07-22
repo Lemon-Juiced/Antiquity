@@ -22,6 +22,10 @@ public class AntiquityItems {
     public static final DeferredItem<GlaiveItem> DIAMOND_GLAIVE = registerItem("diamond_glaive", p -> new GlaiveItem(ToolMaterial.DIAMOND, 3.0F, -3.1F, 1.0F, p));
     public static final DeferredItem<GlaiveItem> NETHERITE_GLAIVE = registerItem("netherite_glaive", p -> new GlaiveItem(ToolMaterial.NETHERITE, 3.0F, -3.1F, 1.0F, p));
 
+    // Kiln Bricks
+    public static final DeferredItem<Item> KILN_BRICK = registerItem("kiln_brick", Item::new);
+    public static final DeferredItem<Item> KILN_CLAY = registerItem("kiln_clay", Item::new);
+
     private static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> function) {
         return ITEMS.registerItem(name, function);
     }

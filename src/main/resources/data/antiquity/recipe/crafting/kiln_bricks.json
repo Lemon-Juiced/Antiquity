@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "antiquity:kiln_brick"
+  },
+  "result": {
+    "id": "antiquity:kiln_bricks"
+  }
+}

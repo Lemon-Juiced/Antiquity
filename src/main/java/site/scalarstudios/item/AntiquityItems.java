@@ -7,11 +7,21 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.Antiquity;
 import site.scalarstudios.item.custom.GlaiveItem;
+import site.scalarstudios.item.custom.GladiusItem;
 
 import java.util.function.Function;
 
 public class AntiquityItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Antiquity.MODID);
+
+    // Gladii
+    public static final DeferredItem<GladiusItem> WOODEN_GLADIUS = registerItem("wooden_gladius", p -> new GladiusItem(ToolMaterial.WOOD, 2.5F, -2.0F, -0.5F, p));
+    public static final DeferredItem<GladiusItem> STONE_GLADIUS = registerItem("stone_gladius", p -> new GladiusItem(ToolMaterial.STONE, 2.5F, -2.0F, -0.5F, p));
+    public static final DeferredItem<GladiusItem> IRON_GLADIUS = registerItem("iron_gladius", p -> new GladiusItem(ToolMaterial.IRON, 2.5F, -2.0F, -0.5F, p));
+    public static final DeferredItem<GladiusItem> COPPER_GLADIUS = registerItem("copper_gladius", p -> new GladiusItem(ToolMaterial.COPPER, 2.5F, -2.0F, -0.5F, p));
+    public static final DeferredItem<GladiusItem> GOLDEN_GLADIUS = registerItem("golden_gladius", p -> new GladiusItem(ToolMaterial.GOLD, 2.5F, -2.0F, -0.5F, p));
+    public static final DeferredItem<GladiusItem> DIAMOND_GLADIUS = registerItem("diamond_gladius", p -> new GladiusItem(ToolMaterial.DIAMOND, 2.5F, -2.0F, -0.5F, p));
+    public static final DeferredItem<GladiusItem> NETHERITE_GLADIUS = registerItem("netherite_gladius", p -> new GladiusItem(ToolMaterial.NETHERITE, 2.5F, -2.0F, -0.5F, p));
 
     // Glaives
     public static final DeferredItem<GlaiveItem> WOODEN_GLAIVE = registerItem("wooden_glaive", p -> new GlaiveItem(ToolMaterial.WOOD, 3.0F, -3.1F, 1.0F, p));

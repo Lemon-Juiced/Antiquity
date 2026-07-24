@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " /"
+  ],
+  "key": {
+    "#": "#minecraft:gold_tool_materials",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "antiquity:golden_gladius"
+  }
+}

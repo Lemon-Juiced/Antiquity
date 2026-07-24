@@ -3,6 +3,14 @@
   "block.antiquity.layered_blackstone_road": "Layered Blackstone Road",
   "block.antiquity.kiln_bricks": "Kiln Bricks",
 
+  "item.antiquity.wooden_gladius": "Wooden Gladius",
+  "item.antiquity.stone_gladius": "Stone Gladius",
+  "item.antiquity.iron_gladius": "Iron Gladius",
+  "item.antiquity.copper_gladius": "Copper Gladius",
+  "item.antiquity.golden_gladius": "Golden Gladius",
+  "item.antiquity.diamond_gladius": "Diamond Gladius",
+  "item.antiquity.netherite_gladius": "Netherite Gladius",
+
   "item.antiquity.wooden_glaive": "Wooden Glaive",
   "item.antiquity.stone_glaive": "Stone Glaive",
   "item.antiquity.iron_glaive": "Iron Glaive",

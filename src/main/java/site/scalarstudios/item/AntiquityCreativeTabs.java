@@ -22,7 +22,7 @@ public class AntiquityCreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ANTIQUITY_ITEMS_TAB = CREATIVE_MODE_TABS.register("antiquity_items", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.antiquity.items"))
-            .icon(() -> new ItemStack(AntiquityItems.COPPER_GLAIVE.get()))
+            .icon(() -> new ItemStack(AntiquityItems.NETHERITE_GLADIUS.get()))
             .build());
 
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
@@ -31,6 +31,13 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
+            event.accept(AntiquityItems.WOODEN_GLADIUS.get());
+            event.accept(AntiquityItems.STONE_GLADIUS.get());
+            event.accept(AntiquityItems.IRON_GLADIUS.get());
+            event.accept(AntiquityItems.COPPER_GLADIUS.get());
+            event.accept(AntiquityItems.GOLDEN_GLADIUS.get());
+            event.accept(AntiquityItems.DIAMOND_GLADIUS.get());
+            event.accept(AntiquityItems.NETHERITE_GLADIUS.get());
             event.accept(AntiquityItems.WOODEN_GLAIVE.get());
             event.accept(AntiquityItems.STONE_GLAIVE.get());
             event.accept(AntiquityItems.IRON_GLAIVE.get());

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": { "#": "antiquity:marble" },
+  "pattern": [ "##", "##" ],
+  "result": { "count": 4, "id": "antiquity:polished_marble" }
+}

@@ -30,6 +30,17 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.KILN_BRICKS.get());
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
+            event.accept(AntiquityBlocks.MARBLE.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS.get());
+            event.accept(AntiquityBlocks.CHISELED_POLISHED_MARBLE.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_PILLAR.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_STAIRS.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_SLAB.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_WALL.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_STAIRS.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_SLAB.get());
+            event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_WALL.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
             event.accept(AntiquityItems.WOODEN_GLADIUS.get());
             event.accept(AntiquityItems.STONE_GLADIUS.get());

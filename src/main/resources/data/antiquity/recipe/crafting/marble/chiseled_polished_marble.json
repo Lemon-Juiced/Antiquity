@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": { "#": "antiquity:polished_marble_bricks_slab" },
+  "pattern": [ "#", "#" ],
+  "result": { "id": "antiquity:chiseled_polished_marble" }
+}

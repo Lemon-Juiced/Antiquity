@@ -4,7 +4,11 @@ import net.minecraft.references.BlockItemIds;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -38,6 +42,61 @@ public class AntiquityBlocks {
         "layered_blackstone_road",
         p -> new LayeredStoneRoadBlock(ColorRGBACalculator.generateLayeredRoadColorRGBA(ColorRGBACalculator.blackstoneBase), p),
         BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).strength(1.0f, 6.0f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL).speedFactor(1.25f)
+    );
+
+    // Marble Blocks
+    public static final DeferredBlock<Block> MARBLE = registerBlock(
+        "marble",
+        properties -> properties.mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<Block> POLISHED_MARBLE = registerBlock(
+        "polished_marble",
+        properties -> properties.mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<Block> POLISHED_MARBLE_BRICKS = registerBlock(
+        "polished_marble_bricks",
+        properties -> properties.mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<Block> CHISELED_POLISHED_MARBLE = registerBlock(
+        "chiseled_polished_marble",
+        properties -> properties.mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<RotatedPillarBlock> POLISHED_MARBLE_PILLAR = registerBlock(
+        "polished_marble_pillar",
+        RotatedPillarBlock::new,
+        BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+
+    public static final DeferredBlock<StairBlock> POLISHED_MARBLE_STAIRS = registerBlock(
+        "polished_marble_stairs",
+        p -> new StairBlock(POLISHED_MARBLE.get().defaultBlockState(), p),
+        BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<SlabBlock> POLISHED_MARBLE_SLAB = registerBlock(
+        "polished_marble_slab",
+        SlabBlock::new,
+        BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<WallBlock> POLISHED_MARBLE_WALL = registerBlock(
+        "polished_marble_wall",
+        WallBlock::new,
+        BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+
+    public static final DeferredBlock<StairBlock> POLISHED_MARBLE_BRICKS_STAIRS = registerBlock(
+        "polished_marble_bricks_stairs",
+        p -> new StairBlock(POLISHED_MARBLE_BRICKS.get().defaultBlockState(), p),
+        BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<SlabBlock> POLISHED_MARBLE_BRICKS_SLAB = registerBlock(
+        "polished_marble_bricks_slab",
+        SlabBlock::new,
+        BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+    public static final DeferredBlock<WallBlock> POLISHED_MARBLE_BRICKS_WALL = registerBlock(
+        "polished_marble_bricks_wall",
+        WallBlock::new,
+        BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
     );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, BlockBehaviour.Properties properties) {

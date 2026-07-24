@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "antiquity:block/polished_marble_pillar", "x": 90, "y": 90 },
+    "axis=y": { "model": "antiquity:block/polished_marble_pillar" },
+    "axis=z": { "model": "antiquity:block/polished_marble_pillar", "x": 90 }
+  }
+}

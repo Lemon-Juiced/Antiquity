@@ -1,6 +1,7 @@
 package site.scalarstudios.item;
 
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ToolMaterial;
@@ -43,6 +44,13 @@ public class AntiquityItems {
     // Drinks
     public static final DeferredItem<NauseousDrinkItem> MEAD = registerItem("mead", NauseousDrinkItem::new, new Item.Properties().stacksTo(16).component(DataComponents.CONSUMABLE, Consumables.DEFAULT_DRINK).usingConvertsTo(Items.GLASS_BOTTLE));
     public static final DeferredItem<NauseousDrinkItem> WINE = registerItem("wine", NauseousDrinkItem::new, new Item.Properties().stacksTo(16).component(DataComponents.CONSUMABLE, Consumables.DEFAULT_DRINK).usingConvertsTo(Items.GLASS_BOTTLE));
+
+    // Food
+    public static final DeferredItem<Item> GRAPES = registerItem(
+        "grapes",
+        Item::new,
+        new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.1F).build())
+    );
 
     private static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> function) {
         return ITEMS.registerItem(name, function);

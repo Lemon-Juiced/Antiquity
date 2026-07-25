@@ -40,6 +40,7 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_STAIRS.get());
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_SLAB.get());
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_WALL.get());
+            event.accept(AntiquityBlocks.GRAPE_VINE.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
             event.accept(AntiquityItems.WOODEN_GLADIUS.get());
             event.accept(AntiquityItems.STONE_GLADIUS.get());
@@ -59,6 +60,7 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityItems.KILN_CLAY.get());
             event.accept(AntiquityItems.MEAD.get());
             event.accept(AntiquityItems.WINE.get());
+            event.accept(AntiquityItems.GRAPES.get());
         }
     }
 

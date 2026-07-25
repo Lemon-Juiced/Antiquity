@@ -14,6 +14,7 @@
   "block.antiquity.polished_marble_bricks_stairs": "Polished Marble Brick Stairs",
   "block.antiquity.polished_marble_bricks_slab": "Polished Marble Brick Slab",
   "block.antiquity.polished_marble_bricks_wall": "Polished Marble Brick Wall",
+  "block.antiquity.grape_vine": "Grape Vine",
 
   "item.antiquity.wooden_gladius": "Wooden Gladius",
   "item.antiquity.stone_gladius": "Stone Gladius",
@@ -36,6 +37,7 @@
 
   "item.antiquity.mead": "Mead",
   "item.antiquity.wine": "Wine",
+  "item.antiquity.grapes": "Grapes",
 
   "itemGroup.antiquity.blocks": "Antiquity: Blocks",
   "itemGroup.antiquity.items": "Antiquity: Items"

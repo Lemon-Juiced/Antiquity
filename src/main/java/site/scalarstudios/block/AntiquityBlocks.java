@@ -12,10 +12,12 @@ import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.Antiquity;
+import site.scalarstudios.block.custom.GrapeVineBlock;
 import site.scalarstudios.block.custom.LayeredStoneRoadBlock;
 import site.scalarstudios.item.AntiquityItems;
 import site.scalarstudios.util.ColorRGBACalculator;
@@ -97,6 +99,21 @@ public class AntiquityBlocks {
         "polished_marble_bricks_wall",
         WallBlock::new,
         BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
+    );
+
+    // Grape Vine
+    public static final DeferredBlock<GrapeVineBlock> GRAPE_VINE = registerBlock(
+        "grape_vine",
+        GrapeVineBlock::new,
+        BlockBehaviour.Properties.of()
+            .mapColor(MapColor.PLANT)
+            .replaceable()
+            .noCollision()
+            .randomTicks()
+            .strength(0.2F)
+            .sound(SoundType.VINE)
+            .ignitedByLava()
+            .pushReaction(PushReaction.DESTROY)
     );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, BlockBehaviour.Properties properties) {

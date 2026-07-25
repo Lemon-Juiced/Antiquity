@@ -4,14 +4,16 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 
 ## Features
 - Blocks:
+  - Grape Vines (Inspired by Ancient Roman Vineyards)
   - Kiln Bricks 
   - Layered Stone Roads (Inspired by Ancient Roman Roads)
     - Layered Cobblestone Road
     - Layered Blackstone Road
   - Marble Blocks (Inspired by Ancient Roman Architecture)
 - Consumables:
+  - Grapes 
+  - Mead (Inspired by Ancient Scandinavian Mead) 
   - Wine (Inspired by Ancient Roman Wine)
-  - Mead (Inspired by Ancient Scandinavian Mead)
 - Weapons:
   - Gladius Weapon (Inspired by Ancient Roman Swords)
   - Glaive Weapon (Inspired by Minecraft Dungeons' Glaive)

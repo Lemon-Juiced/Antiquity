@@ -13,6 +13,18 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
   - Gladius Weapon (Inspired by Ancient Roman Swords)
   - Glaive Weapon (Inspired by Minecraft Dungeons' Glaive)
 
+## Planned Features
+- Marble World Generation
+- Kiln Block (can be used to craft Fermentation Pots)
+- Grape Crops (can be used to craft Wine)
+- Fermentation Pots (can be used to craft Wine)
+- Wine 
+- Wooden Casks (can be used to craft Mead)
+- Mead
+- Olive Trees (and Olive Wood Set)
+- Olives (can be used to craft Olive Oil)
+- Olive Oil 
+
 ## About
 Created for CurseForge's [Minecraft ModJam 2026 — Echoes of the Past](https://mod.curseforge.com/minecraft/modjam2026/).
 

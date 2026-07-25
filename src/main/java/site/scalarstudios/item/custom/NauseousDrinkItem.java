@@ -34,7 +34,7 @@ public class NauseousDrinkItem extends Item {
                 entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, NAUSEA_DURATION_TICKS, nauseaAmplifier + 1));
             }
 
-            entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, RESISTANCE_DURATION_TICKS, 0));
+            entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, RESISTANCE_DURATION_TICKS));
         }
         return super.finishUsingItem(stack, level, entity);
     }

@@ -20,7 +20,6 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 
 ## Planned Features
 - Kiln Block (can be used to craft Fermentation Pots)
-- Grape Crops (can be used to craft Wine)
 - Fermentation Pots (can be used to craft Wine)
 - Wooden Casks (can be used to craft Mead)
 - Olive Trees (and Olive Wood Set)

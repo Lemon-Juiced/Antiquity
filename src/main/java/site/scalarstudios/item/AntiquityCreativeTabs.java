@@ -26,6 +26,7 @@ public class AntiquityCreativeTabs {
 
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == ANTIQUITY_BLOCKS_TAB.get()) {
+            event.accept(AntiquityBlocks.GRAPE_VINE.get());
             event.accept(AntiquityBlocks.KILN_BRICKS.get());
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
@@ -40,7 +41,6 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_STAIRS.get());
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_SLAB.get());
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_WALL.get());
-            event.accept(AntiquityBlocks.GRAPE_VINE.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
             event.accept(AntiquityItems.WOODEN_GLADIUS.get());
             event.accept(AntiquityItems.STONE_GLADIUS.get());

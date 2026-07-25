@@ -1,8 +1,8 @@
 {
+  "block.antiquity.grape_vine": "Grape Vine",
   "block.antiquity.layered_cobblestone_road": "Layered Cobblestone Road",
   "block.antiquity.layered_blackstone_road": "Layered Blackstone Road",
   "block.antiquity.kiln_bricks": "Kiln Bricks",
-
   "block.antiquity.marble": "Marble",
   "block.antiquity.polished_marble": "Polished Marble",
   "block.antiquity.polished_marble_bricks": "Polished Marble Bricks",
@@ -14,7 +14,6 @@
   "block.antiquity.polished_marble_bricks_stairs": "Polished Marble Brick Stairs",
   "block.antiquity.polished_marble_bricks_slab": "Polished Marble Brick Slab",
   "block.antiquity.polished_marble_bricks_wall": "Polished Marble Brick Wall",
-  "block.antiquity.grape_vine": "Grape Vine",
 
   "item.antiquity.wooden_gladius": "Wooden Gladius",
   "item.antiquity.stone_gladius": "Stone Gladius",

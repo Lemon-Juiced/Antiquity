@@ -1,7 +1,5 @@
 package site.scalarstudios.block;
 
-import net.minecraft.references.BlockItemIds;
-import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
@@ -27,6 +25,13 @@ import java.util.function.UnaryOperator;
 
 public class AntiquityBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Antiquity.MODID);
+
+    // Grape Vine
+    public static final DeferredBlock<GrapeVineBlock> GRAPE_VINE = registerBlock(
+            "grape_vine",
+            GrapeVineBlock::new,
+            BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollision().randomTicks().strength(0.2F).sound(SoundType.VINE).ignitedByLava().pushReaction(PushReaction.DESTROY)
+    );
 
     // Kiln Bricks
     public static final DeferredBlock<Block> KILN_BRICKS = registerBlock(
@@ -99,21 +104,6 @@ public class AntiquityBlocks {
         "polished_marble_bricks_wall",
         WallBlock::new,
         BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F)
-    );
-
-    // Grape Vine
-    public static final DeferredBlock<GrapeVineBlock> GRAPE_VINE = registerBlock(
-        "grape_vine",
-        GrapeVineBlock::new,
-        BlockBehaviour.Properties.of()
-            .mapColor(MapColor.PLANT)
-            .replaceable()
-            .noCollision()
-            .randomTicks()
-            .strength(0.2F)
-            .sound(SoundType.VINE)
-            .ignitedByLava()
-            .pushReaction(PushReaction.DESTROY)
     );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, BlockBehaviour.Properties properties) {

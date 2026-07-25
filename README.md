@@ -14,7 +14,6 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
   - Glaive Weapon (Inspired by Minecraft Dungeons' Glaive)
 
 ## Planned Features
-- Marble World Generation
 - Kiln Block (can be used to craft Fermentation Pots)
 - Grape Crops (can be used to craft Wine)
 - Fermentation Pots (can be used to craft Wine)

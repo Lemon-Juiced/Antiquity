@@ -17,7 +17,7 @@ public class AntiquityCreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ANTIQUITY_BLOCKS_TAB = CREATIVE_MODE_TABS.register("antiquity_blocks", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.antiquity.blocks"))
-            .icon(() -> new ItemStack(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get()))
+            .icon(() -> new ItemStack(AntiquityBlocks.KILN_BRICKS.get()))
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ANTIQUITY_ITEMS_TAB = CREATIVE_MODE_TABS.register("antiquity_items", () -> CreativeModeTab.builder()

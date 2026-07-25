@@ -12,8 +12,8 @@ public class NauseousDrinkItem extends Item {
     private static final int NAUSEA_DURATION_TICKS = 300;
     private static final int POISON_DURATION_TICKS = 150;
     private static final int RESISTANCE_DURATION_TICKS = 300;
-    // Nausea V (amplifier 5) is the cap - drinking further past this causes alcohol poisoning instead.
-    private static final int MAX_NAUSEA_AMPLIFIER = 5;
+    // Nausea V (amplifier 4) is the cap - drinking further past this causes alcohol poisoning instead.
+    private static final int MAX_NAUSEA_AMPLIFIER = 4;
 
     public NauseousDrinkItem(Item.Properties properties) {
         super(properties);

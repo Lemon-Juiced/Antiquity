@@ -10,7 +10,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.Antiquity;
 import site.scalarstudios.block.AntiquityBlocks;
-import site.scalarstudios.item.AntiquityItems;
 
 public class AntiquityCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Antiquity.MODID);
@@ -58,6 +57,8 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityItems.NETHERITE_GLAIVE.get());
             event.accept(AntiquityItems.KILN_BRICK.get());
             event.accept(AntiquityItems.KILN_CLAY.get());
+            event.accept(AntiquityItems.MEAD.get());
+            event.accept(AntiquityItems.WINE.get());
         }
     }
 

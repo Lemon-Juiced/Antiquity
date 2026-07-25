@@ -67,7 +67,7 @@ dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
 
     // QoL For Testing
-    //implementation "curse.maven:jade-324717:8326300" // Jade
+    implementation "curse.maven:jade-324717:8326243" // Jade
     implementation "curse.maven:jei-238222:8480203" // JEI
 }
 

@@ -1,13 +1,17 @@
 package site.scalarstudios.item;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.component.Consumables;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.Antiquity;
 import site.scalarstudios.item.custom.GlaiveItem;
 import site.scalarstudios.item.custom.GladiusItem;
+import site.scalarstudios.item.custom.NauseousDrinkItem;
 
 import java.util.function.Function;
 
@@ -36,8 +40,16 @@ public class AntiquityItems {
     public static final DeferredItem<Item> KILN_BRICK = registerItem("kiln_brick", Item::new);
     public static final DeferredItem<Item> KILN_CLAY = registerItem("kiln_clay", Item::new);
 
+    // Drinks
+    public static final DeferredItem<NauseousDrinkItem> MEAD = registerItem("mead", NauseousDrinkItem::new, new Item.Properties().stacksTo(16).component(DataComponents.CONSUMABLE, Consumables.DEFAULT_DRINK).usingConvertsTo(Items.GLASS_BOTTLE));
+    public static final DeferredItem<NauseousDrinkItem> WINE = registerItem("wine", NauseousDrinkItem::new, new Item.Properties().stacksTo(16).component(DataComponents.CONSUMABLE, Consumables.DEFAULT_DRINK).usingConvertsTo(Items.GLASS_BOTTLE));
+
     private static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> function) {
         return ITEMS.registerItem(name, function);
+    }
+
+    private static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> function, Item.Properties properties) {
+        return ITEMS.registerItem(name, function, () -> properties);
     }
 
     public static void register(IEventBus eventBus) {

@@ -9,6 +9,9 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
     - Layered Cobblestone Road
     - Layered Blackstone Road
   - Marble Blocks (Inspired by Ancient Roman Architecture)
+- Consumables:
+  - Wine (Inspired by Ancient Roman Wine)
+  - Mead (Inspired by Ancient Scandinavian Mead)
 - Weapons:
   - Gladius Weapon (Inspired by Ancient Roman Swords)
   - Glaive Weapon (Inspired by Minecraft Dungeons' Glaive)
@@ -17,9 +20,7 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 - Kiln Block (can be used to craft Fermentation Pots)
 - Grape Crops (can be used to craft Wine)
 - Fermentation Pots (can be used to craft Wine)
-- Wine 
 - Wooden Casks (can be used to craft Mead)
-- Mead
 - Olive Trees (and Olive Wood Set)
 - Olives (can be used to craft Olive Oil)
 - Olive Oil 

@@ -34,6 +34,9 @@
   "item.antiquity.kiln_brick": "Kiln Brick",
   "item.antiquity.kiln_clay": "Kiln Clay",
 
+  "item.antiquity.mead": "Mead",
+  "item.antiquity.wine": "Wine",
+
   "itemGroup.antiquity.blocks": "Antiquity: Blocks",
   "itemGroup.antiquity.items": "Antiquity: Items"
 }

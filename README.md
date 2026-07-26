@@ -24,9 +24,9 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 - Kiln Block (can be used to craft Fermentation Pots)
 - Fermentation Pots (can be used to craft Wine)
 - Wooden Casks (can be used to craft Mead)
-- Olive Trees (and Olive Wood Set)
 - Olives (can be used to craft Olive Oil)
 - Olive Oil 
+- Vemom Glaive 
 
 ## About
 Created for CurseForge's [Minecraft ModJam 2026 — Echoes of the Past](https://mod.curseforge.com/minecraft/modjam2026/).

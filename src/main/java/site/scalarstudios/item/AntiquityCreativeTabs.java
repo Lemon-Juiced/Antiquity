@@ -41,6 +41,24 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_STAIRS.get());
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_SLAB.get());
             event.accept(AntiquityBlocks.POLISHED_MARBLE_BRICKS_WALL.get());
+            event.accept(AntiquityBlocks.OLIVE_LOG.get());
+            event.accept(AntiquityBlocks.STRIPPED_OLIVE_LOG.get());
+            event.accept(AntiquityBlocks.OLIVE_WOOD.get());
+            event.accept(AntiquityBlocks.STRIPPED_OLIVE_WOOD.get());
+            event.accept(AntiquityBlocks.OLIVE_PLANKS.get());
+            event.accept(AntiquityBlocks.OLIVE_SAPLING.get());
+            event.accept(AntiquityBlocks.OLIVE_LEAVES.get());
+            event.accept(AntiquityBlocks.OLIVE_SHELF.get());
+            event.accept(AntiquityBlocks.OLIVE_STAIRS.get());
+            event.accept(AntiquityBlocks.OLIVE_SLAB.get());
+            event.accept(AntiquityBlocks.OLIVE_FENCE.get());
+            event.accept(AntiquityBlocks.OLIVE_FENCE_GATE.get());
+            event.accept(AntiquityBlocks.OLIVE_DOOR.get());
+            event.accept(AntiquityBlocks.OLIVE_TRAPDOOR.get());
+            event.accept(AntiquityBlocks.OLIVE_BUTTON.get());
+            event.accept(AntiquityBlocks.OLIVE_PRESSURE_PLATE.get());
+            event.accept(AntiquityBlocks.OLIVE_SIGN.get());
+            event.accept(AntiquityBlocks.OLIVE_HANGING_SIGN.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
             event.accept(AntiquityItems.WOODEN_GLADIUS.get());
             event.accept(AntiquityItems.STONE_GLADIUS.get());
@@ -61,6 +79,8 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityItems.MEAD.get());
             event.accept(AntiquityItems.WINE.get());
             event.accept(AntiquityItems.GRAPES.get());
+            event.accept(AntiquityItems.OLIVE_BOAT.get());
+            event.accept(AntiquityItems.OLIVE_CHEST_BOAT.get());
         }
     }
 

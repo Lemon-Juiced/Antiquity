@@ -2,6 +2,12 @@
   "values": {
     "antiquity:grapes": {
       "chance": 0.3
+    },
+    "antiquity:olive_sapling": {
+      "chance": 0.3
+    },
+    "antiquity:olive_leaves": {
+      "chance": 0.3
     }
   }
 }

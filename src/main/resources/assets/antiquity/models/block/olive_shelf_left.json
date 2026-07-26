@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_shelf_left",
+  "textures": {
+    "all": "antiquity:block/olive_shelf",
+    "particle": "antiquity:block/stripped_olive_log" }
+}

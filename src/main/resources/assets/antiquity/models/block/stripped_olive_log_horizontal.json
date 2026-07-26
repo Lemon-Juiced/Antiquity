@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "antiquity:block/stripped_olive_log_top",
+    "side": "antiquity:block/stripped_olive_log" }
+}

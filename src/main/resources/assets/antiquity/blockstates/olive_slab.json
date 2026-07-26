@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "antiquity:block/olive_slab" },
+    "type=double": { "model": "antiquity:block/olive_planks" },
+    "type=top": { "model": "antiquity:block/olive_slab_top" }
+  }
+}

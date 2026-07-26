@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [ { "condition": "minecraft:survives_explosion" } ],
+      "entries": [ { "type": "minecraft:item", "name": "antiquity:olive_planks" } ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "antiquity:blocks/olive_planks"
+}

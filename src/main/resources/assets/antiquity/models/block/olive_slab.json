@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "antiquity:block/olive_planks",
+    "side": "antiquity:block/olive_planks",
+    "top": "antiquity:block/olive_planks"
+  }
+}

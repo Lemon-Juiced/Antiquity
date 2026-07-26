@@ -2,6 +2,7 @@ package site.scalarstudios.item;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BoatItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ToolMaterial;
@@ -10,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.Antiquity;
+import site.scalarstudios.entity.AntiquityEntityTypes;
 import site.scalarstudios.item.custom.GlaiveItem;
 import site.scalarstudios.item.custom.GladiusItem;
 import site.scalarstudios.item.custom.NauseousDrinkItem;
@@ -50,6 +52,18 @@ public class AntiquityItems {
         "grapes",
         Item::new,
         new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.1F).build())
+    );
+
+    // Olive Boats
+    public static final DeferredItem<Item> OLIVE_BOAT = registerItem(
+        "olive_boat",
+        p -> new BoatItem(AntiquityEntityTypes.OLIVE_BOAT.get(), p),
+        new Item.Properties().stacksTo(1)
+    );
+    public static final DeferredItem<Item> OLIVE_CHEST_BOAT = registerItem(
+        "olive_chest_boat",
+        p -> new BoatItem(AntiquityEntityTypes.OLIVE_CHEST_BOAT.get(), p),
+        new Item.Properties().stacksTo(1)
     );
 
     private static <T extends Item> DeferredItem<T> registerItem(String name, Function<Item.Properties, T> function) {

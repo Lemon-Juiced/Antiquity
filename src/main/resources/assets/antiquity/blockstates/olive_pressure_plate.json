@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "antiquity:block/olive_pressure_plate" },
+    "powered=true": { "model": "antiquity:block/olive_pressure_plate_down" }
+  }
+}

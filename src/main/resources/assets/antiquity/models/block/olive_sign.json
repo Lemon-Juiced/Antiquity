@@ -1,5 +1,6 @@
 {
   "textures": {
-    "particle": "antiquity:block/olive_planks"
+    "particle": "antiquity:block/olive_planks",
+    "texture": "antiquity:block/olive_sign"
   }
 }

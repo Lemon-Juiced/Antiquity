@@ -1,5 +1,21 @@
 {
   "variants": {
-    "": { "model": "antiquity:block/olive_sign" }
+    "rotation=0": { "model": "antiquity:block/olive_sign_rot_0" },
+    "rotation=1": { "model": "antiquity:block/olive_sign_rot_0" },
+    "rotation=2": { "model": "antiquity:block/olive_sign_rot_0" },
+    "rotation=3": { "model": "antiquity:block/olive_sign_rot_0" },
+    "rotation=4": { "model": "antiquity:block/olive_sign_rot_0", "y": 90 },
+    "rotation=5": { "model": "antiquity:block/olive_sign_rot_0", "y": 90 },
+    "rotation=6": { "model": "antiquity:block/olive_sign_rot_0", "y": 90 },
+    "rotation=7": { "model": "antiquity:block/olive_sign_rot_0", "y": 90 },
+    "rotation=8": { "model": "antiquity:block/olive_sign_rot_0", "y": 180 },
+    "rotation=9": { "model": "antiquity:block/olive_sign_rot_0", "y": 180 },
+    "rotation=10": { "model": "antiquity:block/olive_sign_rot_2", "y": 180 },
+    "rotation=11": { "model": "antiquity:block/olive_sign_rot_0", "y": 180 },
+    "rotation=12": { "model": "antiquity:block/olive_sign_rot_0", "y": 270 },
+    "rotation=13": { "model": "antiquity:block/olive_sign_rot_0", "y": 270 },
+    "rotation=14": { "model": "antiquity:block/olive_sign_rot_0", "y": 270 },
+    "rotation=15": { "model": "antiquity:block/olive_sign_rot_0", "y": 270 }
   }
 }
+

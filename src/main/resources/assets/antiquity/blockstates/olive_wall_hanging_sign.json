@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "antiquity:block/olive_hanging_sign" }
+    "facing=north": { "model": "antiquity:block/olive_wall_hanging_sign", "y": 180 },
+    "facing=south": { "model": "antiquity:block/olive_wall_hanging_sign" },
+    "facing=west": { "model": "antiquity:block/olive_wall_hanging_sign", "y": 90 },
+    "facing=east": { "model": "antiquity:block/olive_wall_hanging_sign", "y": 270 }
   }
 }

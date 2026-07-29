@@ -11,7 +11,6 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
     - Layered Blackstone Road
   - Marble Blocks (Inspired by Ancient Roman Architecture)
   - Olive Wood Set (Inspired by Mediterranean Olive Trees)
-    - Known Bug: Olive Hanging Signs and Olive Signs render transparent in the world. 
 - Consumables:
   - Grapes 
   - Mead (Inspired by Ancient Scandinavian Mead) 

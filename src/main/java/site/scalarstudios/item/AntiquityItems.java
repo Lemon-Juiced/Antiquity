@@ -48,11 +48,8 @@ public class AntiquityItems {
     public static final DeferredItem<NauseousDrinkItem> WINE = registerItem("wine", NauseousDrinkItem::new, new Item.Properties().stacksTo(16).component(DataComponents.CONSUMABLE, Consumables.DEFAULT_DRINK).usingConvertsTo(Items.GLASS_BOTTLE));
 
     // Food
-    public static final DeferredItem<Item> GRAPES = registerItem(
-        "grapes",
-        Item::new,
-        new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.1F).build())
-    );
+    public static final DeferredItem<Item> GRAPES = registerItem("grapes", Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.1F).build()));
+    public static final DeferredItem<Item> OLIVES = registerItem("olives", Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1F).build()));
 
     // Olive Boats
     public static final DeferredItem<Item> OLIVE_BOAT = registerItem(

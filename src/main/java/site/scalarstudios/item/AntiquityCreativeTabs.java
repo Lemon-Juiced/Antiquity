@@ -79,6 +79,7 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityItems.MEAD.get());
             event.accept(AntiquityItems.WINE.get());
             event.accept(AntiquityItems.GRAPES.get());
+            event.accept(AntiquityItems.OLIVES.get());
             event.accept(AntiquityItems.OLIVE_BOAT.get());
             event.accept(AntiquityItems.OLIVE_CHEST_BOAT.get());
         }

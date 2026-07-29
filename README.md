@@ -13,6 +13,7 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
   - Olive Wood Set (Inspired by Mediterranean Olive Trees)
 - Consumables:
   - Grapes 
+  - Olives
   - Mead (Inspired by Ancient Scandinavian Mead) 
   - Wine (Inspired by Ancient Roman Wine)
 - Weapons:
@@ -23,7 +24,6 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 - Kiln Block (can be used to craft Fermentation Pots)
 - Fermentation Pots (can be used to craft Wine)
 - Wooden Casks (can be used to craft Mead)
-- Olives (can be used to craft Olive Oil)
 - Olive Oil 
 - Vemom Glaive 
 

@@ -3,6 +3,8 @@ Antiquity is a Minecraft mod for 26.2+ that adds a variety of new features based
 It includes new blocks, items, and gameplay mechanics that allow players to explore and experience the world of ancient civilizations.  
 
 ## Features
+- Biomes:
+  - Chaparral Biome (Inspired by Mediterranean Climate)
 - Blocks:
   - Grape Vines (Inspired by Ancient Roman Vineyards)
   - Kiln Bricks 

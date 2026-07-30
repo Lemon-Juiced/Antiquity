@@ -25,3 +25,10 @@ Antiquity is a Minecraft mod for 26.2 that adds a variety of new features based 
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="terrablender"
+    type="required"
+    versionRange="[26.2.0.0.0,)"
+    ordering="NONE"
+    side="BOTH"

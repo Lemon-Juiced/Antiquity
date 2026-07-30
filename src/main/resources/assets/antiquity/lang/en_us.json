@@ -67,5 +67,7 @@
   "item.antiquity.olive_chest_boat": "Olive Boat with Chest",
 
   "itemGroup.antiquity.blocks": "Antiquity: Blocks",
-  "itemGroup.antiquity.items": "Antiquity: Items"
+  "itemGroup.antiquity.items": "Antiquity: Items",
+
+  "biome.antiquity.chaparral": "Chaparral"
 }

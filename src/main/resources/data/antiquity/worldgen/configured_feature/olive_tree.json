@@ -19,7 +19,10 @@
         }
       ]
     },
-    "decorators": [],
+    "decorators": [
+      { "type": "antiquity:grape_trunk_vine" },
+      { "type": "antiquity:grape_leave_vine", "probability": 0.25 }
+    ],
     "foliage_placer": {
       "type": "minecraft:blob_foliage_placer",
       "height": 3,

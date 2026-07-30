@@ -1,6 +1,7 @@
 package site.scalarstudios;
 
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.entity.BlockEntityTypes;
@@ -16,6 +17,9 @@ import site.scalarstudios.block.AntiquityBlocks;
 import site.scalarstudios.entity.AntiquityEntityTypes;
 import site.scalarstudios.item.AntiquityCreativeTabs;
 import site.scalarstudios.item.AntiquityItems;
+import site.scalarstudios.worldgen.AntiquityRegion;
+import site.scalarstudios.worldgen.AntiquityTreeDecoratorTypes;
+import terrablender.api.Regions;
 
 @Mod(Antiquity.MODID)
 public class Antiquity {
@@ -28,6 +32,7 @@ public class Antiquity {
         AntiquityItems.register(modEventBus);
         AntiquityBlocks.register(modEventBus);
         AntiquityEntityTypes.register(modEventBus);
+        AntiquityTreeDecoratorTypes.register(modEventBus);
         modEventBus.addListener(Antiquity::onBlockEntityTypeAddBlocks);
 
         // Register Creative Tabs
@@ -40,6 +45,8 @@ public class Antiquity {
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> ((FlowerPotBlock) Blocks.FLOWER_POT)
             .addPlant(BuiltInRegistries.BLOCK.getKey(AntiquityBlocks.OLIVE_SAPLING.get()), AntiquityBlocks.POTTED_OLIVE_SAPLING::get));
+
+        event.enqueueWork(() -> Regions.register(new AntiquityRegion(Identifier.fromNamespaceAndPath(MODID, "overworld"), 5)));
     }
 
     private static void onBlockEntityTypeAddBlocks(BlockEntityTypeAddBlocksEvent event) {

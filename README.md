@@ -2,7 +2,9 @@
 Antiquity is a Minecraft mod for 26.2+ that adds a variety of new features based on the historical Antiquity period. 
 It includes new blocks, items, and gameplay mechanics that allow players to explore and experience the world of ancient civilizations.  
 
-## Features
+## 
+- Armor
+  - Imperator Crown (Inspired by Ancient Noble Crowns)
 - Biomes:
   - Chaparral Biome (Inspired by Mediterranean Climate)
 - Blocks:

@@ -1,12 +1,20 @@
 package site.scalarstudios.item;
 
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BoatItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.component.Consumables;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.Equippable;
+import net.minecraft.world.item.equipment.EquipmentAssets;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -16,10 +24,30 @@ import site.scalarstudios.item.custom.GlaiveItem;
 import site.scalarstudios.item.custom.GladiusItem;
 import site.scalarstudios.item.custom.NauseousDrinkItem;
 
+import java.util.Map;
 import java.util.function.Function;
 
 public class AntiquityItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Antiquity.MODID);
+
+    // Armor
+    private static final ArmorMaterial IMPERATOR_CROWN_MATERIAL = new ArmorMaterial(33, Map.of(ArmorType.HELMET, 3), 10, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.0F, ItemTags.REPAIRS_GOLD_ARMOR, ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Antiquity.MODID, "imperator")));
+    // Item.Properties#humanoidArmor() resolves its repair tag via BuiltInRegistries.acquireBootstrapRegistrationLookup,
+    // which is only available during Vanilla's own item bootstrap and throws once mods register items post-freeze.
+    // Rebuild the same properties by hand, using the direct-item repair overload instead of a tag lookup.
+    public static final DeferredItem<Item> IMPERATOR_CROWN = registerItem(
+        "imperator_crown",
+        Item::new,
+        new Item.Properties()
+            .durability(ArmorType.HELMET.getDurability(IMPERATOR_CROWN_MATERIAL.durability()))
+            .attributes(IMPERATOR_CROWN_MATERIAL.createAttributes(ArmorType.HELMET))
+            .enchantable(IMPERATOR_CROWN_MATERIAL.enchantmentValue())
+            .component(
+                DataComponents.EQUIPPABLE,
+                Equippable.builder(ArmorType.HELMET.getSlot()).setEquipSound(IMPERATOR_CROWN_MATERIAL.equipSound()).setAsset(IMPERATOR_CROWN_MATERIAL.assetId()).build()
+            )
+            .repairable(Items.GOLD_INGOT)
+    );
 
     // Gladii
     public static final DeferredItem<GladiusItem> WOODEN_GLADIUS = registerItem("wooden_gladius", p -> new GladiusItem(ToolMaterial.WOOD, 2.5F, -2.0F, -0.5F, p));

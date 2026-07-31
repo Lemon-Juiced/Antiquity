@@ -60,6 +60,7 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.OLIVE_SIGN.get());
             event.accept(AntiquityBlocks.OLIVE_HANGING_SIGN.get());
         } else if  (event.getTab() == ANTIQUITY_ITEMS_TAB.get()) {
+            event.accept(AntiquityItems.IMPERATOR_CROWN.get());
             event.accept(AntiquityItems.WOODEN_GLADIUS.get());
             event.accept(AntiquityItems.STONE_GLADIUS.get());
             event.accept(AntiquityItems.IRON_GLADIUS.get());

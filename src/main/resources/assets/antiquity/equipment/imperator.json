@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "humanoid": [
+      { "texture": "antiquity:imperator" }
+    ],
+    "humanoid_baby": [
+      { "texture": "antiquity:imperator" }
+    ]
+  }
+}

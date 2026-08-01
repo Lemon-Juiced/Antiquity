@@ -1,0 +1,9 @@
+{
+  "type": "antiquity:kiln",
+  "experience": 0.3,
+  "cookingtime": 100,
+  "ingredient": "antiquity:kiln_clay",
+  "result": {
+    "id": "antiquity:kiln_brick"
+  }
+}

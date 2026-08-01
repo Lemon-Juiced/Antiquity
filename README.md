@@ -10,6 +10,7 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 - Blocks:
   - Grape Vines (Inspired by Ancient Roman Vineyards)
   - Kiln Bricks 
+  - Kiln w/ JEI Integration
   - Layered Stone Roads (Inspired by Ancient Roman Roads)
     - Layered Cobblestone Road
     - Layered Blackstone Road
@@ -25,7 +26,6 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
   - Glaive Weapon (Inspired by Minecraft Dungeons' Glaive)
 
 ## Planned Features
-- Kiln Block (can be used to craft Fermentation Pots)
 - Fermentation Pots (can be used to craft Wine)
 - Wooden Casks (can be used to craft Mead)
 - Olive Oil 

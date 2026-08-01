@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "antiquity:block/kiln_front_on",
+    "side": "antiquity:block/kiln_bricks",
+    "top": "antiquity:block/kiln_bricks"
+  }
+}

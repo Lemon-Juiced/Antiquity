@@ -14,9 +14,12 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import site.scalarstudios.block.AntiquityBlocks;
+import site.scalarstudios.block.entity.AntiquityBlockEntities;
 import site.scalarstudios.entity.AntiquityEntityTypes;
 import site.scalarstudios.item.AntiquityCreativeTabs;
 import site.scalarstudios.item.AntiquityItems;
+import site.scalarstudios.menu.AntiquityMenuTypes;
+import site.scalarstudios.recipe.AntiquityRecipes;
 import site.scalarstudios.worldgen.AntiquityRegion;
 import site.scalarstudios.worldgen.AntiquityTreeDecoratorTypes;
 import terrablender.api.Regions;
@@ -32,6 +35,9 @@ public class Antiquity {
         AntiquityItems.register(modEventBus);
         AntiquityBlocks.register(modEventBus);
         AntiquityEntityTypes.register(modEventBus);
+        AntiquityBlockEntities.register(modEventBus);
+        AntiquityMenuTypes.register(modEventBus);
+        AntiquityRecipes.register(modEventBus);
         AntiquityTreeDecoratorTypes.register(modEventBus);
         modEventBus.addListener(Antiquity::onBlockEntityTypeAddBlocks);
 

@@ -3,6 +3,7 @@
   "block.antiquity.layered_cobblestone_road": "Layered Cobblestone Road",
   "block.antiquity.layered_blackstone_road": "Layered Blackstone Road",
   "block.antiquity.kiln_bricks": "Kiln Bricks",
+  "block.antiquity.kiln": "Kiln",
   "block.antiquity.marble": "Marble",
   "block.antiquity.polished_marble": "Polished Marble",
   "block.antiquity.polished_marble_bricks": "Polished Marble Bricks",
@@ -67,6 +68,8 @@
   "entity.antiquity.olive_chest_boat": "Olive Boat with Chest",
   "item.antiquity.olive_boat": "Olive Boat",
   "item.antiquity.olive_chest_boat": "Olive Boat with Chest",
+
+  "container.antiquity.kiln": "Kiln",
 
   "itemGroup.antiquity.blocks": "Antiquity: Blocks",
   "itemGroup.antiquity.items": "Antiquity: Items",

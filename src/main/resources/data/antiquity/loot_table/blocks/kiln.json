@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [ { "condition": "minecraft:survives_explosion" } ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_components",
+              "include": [ "minecraft:custom_name" ],
+              "source": "block_entity"
+            }
+          ],
+          "name": "antiquity:kiln"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "antiquity:blocks/kiln"
+}

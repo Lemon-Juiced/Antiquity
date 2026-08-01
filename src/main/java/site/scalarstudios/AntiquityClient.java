@@ -13,8 +13,11 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import site.scalarstudios.block.AntiquityBlocks;
+import site.scalarstudios.client.gui.KilnScreen;
 import site.scalarstudios.entity.AntiquityEntityTypes;
+import site.scalarstudios.menu.AntiquityMenuTypes;
 
 import java.util.List;
 
@@ -42,11 +45,12 @@ public class AntiquityClient {
     }
 
     @SubscribeEvent
+    static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
+        event.register(AntiquityMenuTypes.KILN.get(), KilnScreen::new);
+    }
+
+    @SubscribeEvent
     static void onRegisterBlockColors(RegisterColorHandlersEvent.BlockTintSources event) {
-        // Olive leaves use a pre-colored (non-biome-tinted) texture, so give them a fixed tint
-        // matching that texture's own color -- otherwise the falling-leaf particle system, which
-        // always queries the registered tint regardless of whether the block model itself uses one,
-        // falls back to white.
         event.register(List.of(BlockTintSources.constant(0xFF788F6E)), AntiquityBlocks.OLIVE_LEAVES.get());
     }
 }

@@ -28,6 +28,7 @@ public class AntiquityCreativeTabs {
         if (event.getTab() == ANTIQUITY_BLOCKS_TAB.get()) {
             event.accept(AntiquityBlocks.GRAPE_VINE.get());
             event.accept(AntiquityBlocks.KILN_BRICKS.get());
+            event.accept(AntiquityBlocks.KILN.get());
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
             event.accept(AntiquityBlocks.MARBLE.get());

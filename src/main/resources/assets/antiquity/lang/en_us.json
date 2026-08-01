@@ -4,6 +4,9 @@
   "block.antiquity.layered_blackstone_road": "Layered Blackstone Road",
   "block.antiquity.kiln_bricks": "Kiln Bricks",
   "block.antiquity.kiln": "Kiln",
+  "block.antiquity.clay_vessel": "Clay Vessel",
+  "block.antiquity.unfired_clay_vessel": "Unfired Clay Vessel",
+  "block.antiquity.fermenting_barrel": "Fermenting Barrel",
   "block.antiquity.marble": "Marble",
   "block.antiquity.polished_marble": "Polished Marble",
   "block.antiquity.polished_marble_bricks": "Polished Marble Bricks",
@@ -54,6 +57,9 @@
   "item.antiquity.diamond_glaive": "Diamond Glaive",
   "item.antiquity.netherite_glaive": "Netherite Glaive",
 
+  "item.antiquity.venom": "Venom",
+  "item.antiquity.venom_glaive": "Venom Glaive",
+
   "item.antiquity.imperator_crown": "Imperator Crown",
 
   "item.antiquity.kiln_brick": "Kiln Brick",
@@ -70,6 +76,8 @@
   "item.antiquity.olive_chest_boat": "Olive Boat with Chest",
 
   "container.antiquity.kiln": "Kiln",
+  "container.antiquity.clay_vessel": "Clay Vessel",
+  "container.antiquity.fermenting_barrel": "Fermenting Barrel",
 
   "itemGroup.antiquity.blocks": "Antiquity: Blocks",
   "itemGroup.antiquity.items": "Antiquity: Items",

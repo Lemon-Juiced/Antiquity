@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [ { "condition": "minecraft:survives_explosion" } ],
+      "entries": [ { "type": "minecraft:item", "name": "antiquity:unfired_clay_vessel" } ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "antiquity:blocks/unfired_clay_vessel"
+}

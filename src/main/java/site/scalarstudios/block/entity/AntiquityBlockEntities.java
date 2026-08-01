@@ -15,6 +15,10 @@ public class AntiquityBlockEntities {
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<KilnBlockEntity>> KILN = BLOCK_ENTITIES.register("kiln", () -> new BlockEntityType<>(KilnBlockEntity::new, Set.of(AntiquityBlocks.KILN.get())));
 
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ClayVesselBlockEntity>> CLAY_VESSEL = BLOCK_ENTITIES.register("clay_vessel", () -> new BlockEntityType<>(ClayVesselBlockEntity::new, Set.of(AntiquityBlocks.CLAY_VESSEL.get())));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FermentingBarrelBlockEntity>> FERMENTING_BARREL = BLOCK_ENTITIES.register("fermenting_barrel", () -> new BlockEntityType<>(FermentingBarrelBlockEntity::new, Set.of(AntiquityBlocks.FERMENTING_BARREL.get())));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

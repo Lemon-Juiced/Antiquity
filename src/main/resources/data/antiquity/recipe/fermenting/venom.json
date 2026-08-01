@@ -1,0 +1,8 @@
+{
+  "type": "antiquity:fermenting",
+  "fermentingtime": 6000,
+  "ingredient": "minecraft:fermented_spider_eye",
+  "result": {
+    "id": "antiquity:venom"
+  }
+}

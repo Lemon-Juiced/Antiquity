@@ -8,6 +8,9 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 - Biomes:
   - Chaparral Biome (Inspired by Mediterranean Climate)
 - Blocks:
+  - Clay Vessels (Inspired by Ancient Wine Creation Methods)
+    - Fermentation Barrel (Alternative Crafting Method for Wine, Inspired by how Scandinavians made Mead)
+    - Unfired Clay Vessel (Intermediate Step Requiring Firing in Kiln)
   - Grape Vines (Inspired by Ancient Roman Vineyards)
   - Kiln Bricks 
   - Kiln w/ JEI Integration
@@ -24,12 +27,7 @@ It includes new blocks, items, and gameplay mechanics that allow players to expl
 - Weapons:
   - Gladius Weapon (Inspired by Ancient Roman Swords)
   - Glaive Weapon (Inspired by Minecraft Dungeons' Glaive)
-
-## Planned Features
-- Fermentation Pots (can be used to craft Wine)
-- Wooden Casks (can be used to craft Mead)
-- Olive Oil 
-- Vemom Glaive 
+    - Venom Glaive (Inspired by Minecraft Dungeons' Venom Glaive)
 
 ## About
 Created for CurseForge's [Minecraft ModJam 2026 — Echoes of the Past](https://mod.curseforge.com/minecraft/modjam2026/).

@@ -23,6 +23,17 @@ public class AntiquityRecipes {
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<KilnRecipe>> KILN_SERIALIZER = RECIPE_SERIALIZERS.register("kiln", () -> KilnRecipe.SERIALIZER);
 
+    public static final DeferredHolder<RecipeType<?>, RecipeType<FermentingRecipe>> FERMENTING_TYPE = RECIPE_TYPES.register("fermenting",
+        () -> new RecipeType<FermentingRecipe>() {
+            @Override
+            public String toString() {
+                return "antiquity:fermenting";
+            }
+        }
+    );
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<FermentingRecipe>> FERMENTING_SERIALIZER = RECIPE_SERIALIZERS.register("fermenting", () -> FermentingRecipe.SERIALIZER);
+
     public static void register(IEventBus eventBus) {
         RECIPE_TYPES.register(eventBus);
         RECIPE_SERIALIZERS.register(eventBus);

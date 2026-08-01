@@ -23,6 +23,7 @@ import site.scalarstudios.entity.AntiquityEntityTypes;
 import site.scalarstudios.item.custom.GlaiveItem;
 import site.scalarstudios.item.custom.GladiusItem;
 import site.scalarstudios.item.custom.NauseousDrinkItem;
+import site.scalarstudios.item.custom.VenomGlaiveItem;
 
 import java.util.Map;
 import java.util.function.Function;
@@ -32,22 +33,7 @@ public class AntiquityItems {
 
     // Armor
     private static final ArmorMaterial IMPERATOR_CROWN_MATERIAL = new ArmorMaterial(33, Map.of(ArmorType.HELMET, 3), 10, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.0F, ItemTags.REPAIRS_GOLD_ARMOR, ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Antiquity.MODID, "imperator")));
-    // Item.Properties#humanoidArmor() resolves its repair tag via BuiltInRegistries.acquireBootstrapRegistrationLookup,
-    // which is only available during Vanilla's own item bootstrap and throws once mods register items post-freeze.
-    // Rebuild the same properties by hand, using the direct-item repair overload instead of a tag lookup.
-    public static final DeferredItem<Item> IMPERATOR_CROWN = registerItem(
-        "imperator_crown",
-        Item::new,
-        new Item.Properties()
-            .durability(ArmorType.HELMET.getDurability(IMPERATOR_CROWN_MATERIAL.durability()))
-            .attributes(IMPERATOR_CROWN_MATERIAL.createAttributes(ArmorType.HELMET))
-            .enchantable(IMPERATOR_CROWN_MATERIAL.enchantmentValue())
-            .component(
-                DataComponents.EQUIPPABLE,
-                Equippable.builder(ArmorType.HELMET.getSlot()).setEquipSound(IMPERATOR_CROWN_MATERIAL.equipSound()).setAsset(IMPERATOR_CROWN_MATERIAL.assetId()).build()
-            )
-            .repairable(Items.GOLD_INGOT)
-    );
+    public static final DeferredItem<Item> IMPERATOR_CROWN = registerItem("imperator_crown", Item::new, new Item.Properties().durability(ArmorType.HELMET.getDurability(IMPERATOR_CROWN_MATERIAL.durability())).attributes(IMPERATOR_CROWN_MATERIAL.createAttributes(ArmorType.HELMET)).enchantable(IMPERATOR_CROWN_MATERIAL.enchantmentValue()).component(DataComponents.EQUIPPABLE, Equippable.builder(ArmorType.HELMET.getSlot()).setEquipSound(IMPERATOR_CROWN_MATERIAL.equipSound()).setAsset(IMPERATOR_CROWN_MATERIAL.assetId()).build()).repairable(Items.GOLD_INGOT));
 
     // Gladii
     public static final DeferredItem<GladiusItem> WOODEN_GLADIUS = registerItem("wooden_gladius", p -> new GladiusItem(ToolMaterial.WOOD, 2.5F, -2.0F, -0.5F, p));
@@ -66,6 +52,10 @@ public class AntiquityItems {
     public static final DeferredItem<GlaiveItem> GOLDEN_GLAIVE = registerItem("golden_glaive", p -> new GlaiveItem(ToolMaterial.GOLD, 3.0F, -3.1F, 1.0F, p));
     public static final DeferredItem<GlaiveItem> DIAMOND_GLAIVE = registerItem("diamond_glaive", p -> new GlaiveItem(ToolMaterial.DIAMOND, 3.0F, -3.1F, 1.0F, p));
     public static final DeferredItem<GlaiveItem> NETHERITE_GLAIVE = registerItem("netherite_glaive", p -> new GlaiveItem(ToolMaterial.NETHERITE, 3.0F, -3.1F, 1.0F, p));
+
+    // Venom
+    public static final DeferredItem<Item> VENOM = registerItem("venom", Item::new);
+    public static final DeferredItem<VenomGlaiveItem> VENOM_GLAIVE = registerItem("venom_glaive", p -> new VenomGlaiveItem(ToolMaterial.DIAMOND, 3.0F, -3.1F, 1.0F, p));
 
     // Kiln Bricks
     public static final DeferredItem<Item> KILN_BRICK = registerItem("kiln_brick", Item::new);

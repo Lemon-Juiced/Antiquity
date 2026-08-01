@@ -13,6 +13,8 @@ public class AntiquityMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<KilnMenu>> KILN = MENU_TYPES.register("kiln", () -> IMenuTypeExtension.create((containerId, inventory, extraData) -> new KilnMenu(containerId, inventory)));
 
+    public static final DeferredHolder<MenuType<?>, MenuType<ClayVesselMenu>> CLAY_VESSEL = MENU_TYPES.register("clay_vessel", () -> IMenuTypeExtension.create((containerId, inventory, extraData) -> new ClayVesselMenu(containerId, inventory)));
+
     public static void register(IEventBus eventBus) {
         MENU_TYPES.register(eventBus);
     }

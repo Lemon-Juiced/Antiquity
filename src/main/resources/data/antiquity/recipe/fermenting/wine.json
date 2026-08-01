@@ -1,0 +1,8 @@
+{
+  "type": "antiquity:fermenting",
+  "fermentingtime": 6000,
+  "ingredient": "antiquity:grapes",
+  "result": {
+    "id": "antiquity:wine"
+  }
+}

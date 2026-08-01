@@ -29,6 +29,9 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityBlocks.GRAPE_VINE.get());
             event.accept(AntiquityBlocks.KILN_BRICKS.get());
             event.accept(AntiquityBlocks.KILN.get());
+            event.accept(AntiquityBlocks.CLAY_VESSEL.get());
+            event.accept(AntiquityBlocks.UNFIRED_CLAY_VESSEL.get());
+            event.accept(AntiquityBlocks.FERMENTING_BARREL.get());
             event.accept(AntiquityBlocks.LAYERED_COBBLESTONE_ROAD.get());
             event.accept(AntiquityBlocks.LAYERED_BLACKSTONE_ROAD.get());
             event.accept(AntiquityBlocks.MARBLE.get());
@@ -76,6 +79,8 @@ public class AntiquityCreativeTabs {
             event.accept(AntiquityItems.GOLDEN_GLAIVE.get());
             event.accept(AntiquityItems.DIAMOND_GLAIVE.get());
             event.accept(AntiquityItems.NETHERITE_GLAIVE.get());
+            event.accept(AntiquityItems.VENOM.get());
+            event.accept(AntiquityItems.VENOM_GLAIVE.get());
             event.accept(AntiquityItems.KILN_BRICK.get());
             event.accept(AntiquityItems.KILN_CLAY.get());
             event.accept(AntiquityItems.MEAD.get());

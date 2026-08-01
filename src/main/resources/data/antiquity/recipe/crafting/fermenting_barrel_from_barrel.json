@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:barrel"
+  ],
+  "result": {
+    "id": "antiquity:fermenting_barrel"
+  }
+}

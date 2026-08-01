@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "antiquity:diamond_glaive",
+    "antiquity:venom"
+  ],
+  "result": {
+    "id": "antiquity:venom_glaive"
+  }
+}

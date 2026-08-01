@@ -41,6 +41,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.Antiquity;
+import site.scalarstudios.block.custom.ClayVesselBlock;
+import site.scalarstudios.block.custom.FermentingBarrelBlock;
 import site.scalarstudios.block.custom.GrapeVineBlock;
 import site.scalarstudios.block.custom.KilnBlock;
 import site.scalarstudios.block.custom.LayeredStoneRoadBlock;
@@ -63,6 +65,13 @@ public class AntiquityBlocks {
 
     // Kiln
     public static final DeferredBlock<KilnBlock> KILN = registerBlock("kiln", KilnBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.5F).lightLevel(state -> state.getValue(KilnBlock.LIT) ? 13 : 0));
+
+    // Clay Vessel
+    public static final DeferredBlock<ClayVesselBlock> CLAY_VESSEL = registerBlock("clay_vessel", ClayVesselBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_ORANGE).sound(SoundType.DECORATED_POT).strength(2.0F));
+    public static final DeferredBlock<Block> UNFIRED_CLAY_VESSEL = registerBlock("unfired_clay_vessel", properties -> properties.mapColor(MapColor.CLAY).sound(SoundType.DECORATED_POT).strength(1.0F));
+
+    // Fermenting Barrel
+    public static final DeferredBlock<FermentingBarrelBlock> FERMENTING_BARREL = registerBlock("fermenting_barrel", FermentingBarrelBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2.5F).ignitedByLava());
 
     // Layered Stone Roads (Inspired by Ancient Roman Roads)
     public static final DeferredBlock<LayeredStoneRoadBlock> LAYERED_COBBLESTONE_ROAD = registerBlock("layered_cobblestone_road", p -> new LayeredStoneRoadBlock(ColorRGBACalculator.generateLayeredRoadColorRGBA(ColorRGBACalculator.cobblestoneBase), p), BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(1.0f, 6.0f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL).speedFactor(1.25f));

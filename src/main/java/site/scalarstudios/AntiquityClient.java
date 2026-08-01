@@ -15,6 +15,7 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import site.scalarstudios.block.AntiquityBlocks;
+import site.scalarstudios.client.gui.ClayVesselScreen;
 import site.scalarstudios.client.gui.KilnScreen;
 import site.scalarstudios.entity.AntiquityEntityTypes;
 import site.scalarstudios.menu.AntiquityMenuTypes;
@@ -47,6 +48,7 @@ public class AntiquityClient {
     @SubscribeEvent
     static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
         event.register(AntiquityMenuTypes.KILN.get(), KilnScreen::new);
+        event.register(AntiquityMenuTypes.CLAY_VESSEL.get(), ClayVesselScreen::new);
     }
 
     @SubscribeEvent

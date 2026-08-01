@@ -1,0 +1,8 @@
+{
+  "type": "antiquity:fermenting",
+  "fermentingtime": 6000,
+  "ingredient": "minecraft:honey_bottle",
+  "result": {
+    "id": "antiquity:mead"
+  }
+}

@@ -1,5 +1,5 @@
-# Antiquity
-Antiquity is a Minecraft mod for 26.2+ that adds a variety of new features based on the historical Antiquity period. 
+# Antiquity: Echoes of the Past
+Antiquity: Echoes of the Past is a Minecraft mod for 26.2+ that adds a variety of new features based on the historical Antiquity period. 
 It includes new blocks, items, and gameplay mechanics that allow players to explore and experience the world of ancient civilizations.  
 
 ## Features
